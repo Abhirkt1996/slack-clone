@@ -25,8 +25,8 @@ app.get("/", (req, res) => {
   res.send("Hello World! 123");
 });
 
-app.use("/api/inngest", serve({ client: inngest, functions }));
-app.use("/api/chat", chatRoutes);
+// app.use("/api/inngest", serve({ client: inngest, functions }));
+// app.use("/api/chat", chatRoutes);
 
 Sentry.setupExpressErrorHandler(app);
 
