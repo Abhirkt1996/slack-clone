@@ -4,8 +4,8 @@ import { ENV } from "./config/env.js";
 import { connectDB } from "./config/db.js";
 import { clerkMiddleware } from "@clerk/express";
 import { functions, inngest } from "./config/inngest.js";
-// import { serve } from "inngest/express";
-// import chatRoutes from "./routes/chat.route.js";
+import { serve } from "inngest/express";
+import chatRoutes from "./routes/chat.route.js";
 
 import cors from "cors";
 
